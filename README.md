@@ -47,7 +47,7 @@ A WDC needs the following 4 files:
 | ![](docs/json-lvl1.png) `<filename>.json`         | The dataset as JSON array              |
 | ![](docs/json-lvl1.png) `<filename>_content.json` | Other text content as name/value pairs |
 
-We will used a `node` script to generate these files from the metadata. To see a description of what the node script does under the hood see [File template changes](#markdown-header-file-template-changes)
+We will used a `node` script to generate these files from the metadata.
 
 ### Run the node script
 
