@@ -1,17 +1,27 @@
-* Configure your path to write the JSON;
-%let outdir=/some/path/on/server;
-* Create the SAS dataset to output to JSON;
-data datasourcename;
-  * the dataset we want to work with;
+*  Get the latest package of macros from SASjs core;
+filename mc url "https://raw.githubusercontent.com/sasjs/core/main/all.sas";
+%inc mc;
+*  Get the current working directory (note this is for windows);
+filename pwd pipe 'echo %cd%';
+data _null_;
+  infile pwd;
+  input;
+  put _infile_;
+  pwd=tranwrd(_infile_,'0d'x,'');
+  call symputx('pwd',pwd);
 run;
+%put pwd: &pwd.;
+libname this "&pwd.";
+
+* Configure your path to write the JSON;
+%let outdir=&pwd.;
 * Generate the metadata SAS dataset;
-proc datasets lib=work memtype=data;
-  modify datasourcename;
-  contents data=work.datasourcename out=work.datasourcename_meta;
+proc datasets lib=this memtype=data;
+  contents data=this.class out=work.class_meta;
 quit;
 * Create filename handle for files to write to;
-filename json "&outdir./datasourcename.json";
-filename jsonmeta "&outdir./datasourcename_meta.json";
+filename json "&outdir./classdata.json";
+filename jsonmeta "&outdir./classdata_meta.json";
 * Export to JSON;
-%mp_jsonout(OBJ,datasourcename,jref=json)
-%mp_jsonout(OBJ,datasourcename_meta,jref=jsonmeta)
+%mp_jsonout(OBJ,this.class,jref=json)
+%mp_jsonout(OBJ,class_meta,jref=jsonmeta)
