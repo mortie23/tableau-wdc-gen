@@ -1,0 +1,32 @@
+[
+  {
+    "NAME": "ids",
+    "TYPE": 2,
+    "LENGTH": 10,
+    "VARNUM": 1,
+    "LABEL": "ID",
+    "FORMAT": "",
+    "FORMATL": 0,
+    "FORMATD": 0
+  },
+  {
+    "NAME": "mag",
+    "TYPE": 1,
+    "LENGTH": 8,
+    "VARNUM": 2,
+    "LABEL": "Magnitude",
+    "FORMAT": "",
+    "FORMATL": 10,
+    "FORMATD": 1
+  },
+  {
+    "NAME": "title",
+    "TYPE": 2,
+    "LENGTH": 100,
+    "VARNUM": 3,
+    "LABEL": "Title",
+    "FORMAT": "",
+    "FORMATL": 0,
+    "FORMATD": 0
+  }
+]

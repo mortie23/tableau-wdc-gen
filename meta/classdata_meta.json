@@ -1,0 +1,52 @@
+[
+  {
+    "NAME": "Age",
+    "TYPE": 1,
+    "LENGTH": 8,
+    "VARNUM": 3,
+    "LABEL": "",
+    "FORMAT": "",
+    "FORMATL": 0,
+    "FORMATD": 0
+  },
+  {
+    "NAME": "Height",
+    "TYPE": 1,
+    "LENGTH": 8,
+    "VARNUM": 4,
+    "LABEL": "",
+    "FORMAT": "",
+    "FORMATL": 0,
+    "FORMATD": 0
+  },
+  {
+    "NAME": "Name",
+    "TYPE": 2,
+    "LENGTH": 8,
+    "VARNUM": 1,
+    "LABEL": "",
+    "FORMAT": "",
+    "FORMATL": 0,
+    "FORMATD": 0
+  },
+  {
+    "NAME": "Sex",
+    "TYPE": 2,
+    "LENGTH": 1,
+    "VARNUM": 2,
+    "LABEL": "",
+    "FORMAT": "",
+    "FORMATL": 0,
+    "FORMATD": 0
+  },
+  {
+    "NAME": "Weight",
+    "TYPE": 1,
+    "LENGTH": 8,
+    "VARNUM": 5,
+    "LABEL": "",
+    "FORMAT": "",
+    "FORMATL": 0,
+    "FORMATD": 0
+  }
+]

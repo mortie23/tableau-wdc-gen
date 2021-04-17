@@ -1,0 +1,14 @@
+{
+  "name": "tableau-wdc-gen",
+  "version": "1.0.0",
+  "description": "Generate Tableau WDC from SAS output",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "argparse": "^2.0.1",
+    "chalk": "^4.1.0",
+    "fs": "0.0.1-security",
+    "log-symbols": "^4.0.0",
+    "readline-sync": "^1.4.10"
+  }
+}
